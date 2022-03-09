@@ -8,6 +8,7 @@ import ServicesPage from './components/ServicesPage';
 import ResearchPage from './components/ResearchPage';
 import Publications from './components/Publications';
 import Contact from './components/Contact';
+import News from './components/News';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/research" element={ <ResearchPage/> } />
         <Route path="/publications" element={ <Publications /> } />
         <Route path="/contact" element={ <Contact /> } />
+        <Route path ="/news" element={<News />} />
       </Routes>
 
     </div>
