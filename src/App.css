@@ -47,7 +47,7 @@
 
 
 #prarie-one-image{
-
+ 
   width: 100%;
   height: auto;
  
@@ -60,13 +60,34 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  
+  z-index: 33;
 
 }
 
 
 #home-top-image-text{
  padding: 25% 0;
-  font-size: 52pt;
+  font-size: 22pt;
+  line-height: 30pt;
   color: whitesmoke;
+}
+
+#goals-list{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.goal-item{
+  border: solid black 2px;
+}
+
+#lizard-left{
+  width: 200px;
+  margin-left: auto;
+}
+
+#lizard-right{
+  width: 200px;
+  margin-left: auto;
 }
