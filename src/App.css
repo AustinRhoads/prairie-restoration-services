@@ -1,23 +1,39 @@
 body{
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .app{
   font-family: 'Roboto Condensed', sans-serif;
-  
+  font-family: 'national-park';
+}
+
+@font-face {
+  font-family: 'national-park';
+  src: url('./typefaces/nationalPark/NationalPark-Regular.otf') format("opentype");
 }
 
 :root{
+  --header-1-font-size: 3rem;
+  --header-1-mobile-font-size: 2rem;
   --header-2-font-size: 2rem;
+  --header-2-mobile-size: 1.25rem;
   --mission-font-size: 2.5rem;
-  --nav-bar-background: rgb(0, 0, 0, 0.3);
+  --nav-bar-background: rgb(0, 0, 0, 0.2);
+  --sage: #8abc8a;
+  --sage-shadow: #5b975b;
+  --sage-lite: #a3caa3;
+  --bronze-gold: #C9AE5D;
+  --bronze: 	#CD7F32;
 }
 
 #nav-bar{
   position: relative;
+  
   height: 120px;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: var(--nav-bar-background);
   text-align: center;
+  
 }
 
 #nav-bar a {
@@ -44,9 +60,13 @@ body{
 
 .parallax-wrapper{
   height: 100vh;
+ /* width: 80vw;
+  float: right;
+  */
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 400px;
+  scroll-behavior: smooth;
 }
 
 .parallax-wrapper::-webkit-scrollbar {
@@ -78,13 +98,21 @@ body{
   width: 100%;
   object-fit: cover;
   z-index: -1;
+ 
 }
 
 .way-background {
-  transform: translateZ(-400px)  scale(2);
+  /* subtle version */
+  transform: translateZ(-800px)  scale(3);
 }
 .background{
-  transform: translateZ(-200px)  scale(1.5);
+  /*transform: translateZ(-200px)  scale(1.5);*/
+
+  /* subtle version */
+  /*transform: translateZ(-200px)  scale(1.5);*/
+
+  /* 1.618 version */
+  transform: translateZ(-495px)  scale(2.2375);
 }
 
 .foreground{
@@ -92,19 +120,53 @@ body{
 }
 
 .p_top{
-  transform: translateZ(-40px)  scale(1.1);
+  /*transform: translateZ(-40px)  scale(1.1);*/
+
+  /* subtle version */
+ /* transform: translateZ(-100px)  scale(1.25);*/
+
+  /* 1.618 version */
+  transform: translateZ(-306px)  scale(1.765);
 }
 
 .p_middle_top{
-  transform: translateZ(-20px)  scale(1.05);
+  /*transform: translateZ(-20px)  scale(1.05);*/
+
+  /* subtle version */
+  /*transform: translateZ(-80px)  scale(1.2);*/
+
+    /* 1.618 version */
+    /*transform: translateZ(-189px)  scale(1.4725);*/
+
+   /* straight line version */
+   transform: translateZ(-244px)  scale(1.61);
+ 
 }
 
 .p_middle_bottom{
-  transform: translateZ(40px)  scale(0.9);
+  /*transform: translateZ(40px)  scale(0.9);*/
+
+  /* subtle version */
+ /* transform: translateZ(-40px)  scale(1.1);*/
+
+    /* 1.618 version */
+    /*transform: translateZ(-117px)  scale(1.2925);*/
+      
+    /* straight line version */
+   transform: translateZ(-150px)  scale(1.375);
 }
 
 .p_bottom{
-  transform: translateZ(80px)  scale(0.8);
+ 
+
+ /* subtle version */
+ /* no transform */
+
+     /* 1.618 version */
+     /*transform: translateZ(-72px)  scale(1.18);*/
+
+            /* straight line version */
+   transform: translateZ(-100px)  scale(1.25);
 }
 
 
@@ -112,8 +174,12 @@ body{
   font-size: 3rem;
   color: white;
   text-shadow: 0 0 5px black;
+  max-width: 300px;
+  float: left;
   /*transform: translateZ(40px)  scale(0.9);*/
-  transform: translateZ(80px)  scale(0.8);
+      /* 1.618 version */
+      transform: translateZ(-45px)  scale(1.115);
+
 }
 
 #text-section{
@@ -201,7 +267,7 @@ body{
 
   .nav-link{
     margin-left: 0.5rem;
-    font-size: var(--header-2-font-size);
+    font-size: var(--header-2-mobile-size);
     color: whitesmoke;
   }
 
@@ -210,6 +276,16 @@ body{
     height: 60px;
     background-color: var(--nav-bar-background);
     text-align: center;
+  }
+
+
+  .title{
+    font-size: var(--header-1-mobile-font-size);
+    line-height: 3rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    /*transform: translateZ(40px)  scale(0.9);*/
+    transform: translateZ(80px)  scale(0.8);
   }
 
 }

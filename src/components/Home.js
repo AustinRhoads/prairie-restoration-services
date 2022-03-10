@@ -59,6 +59,7 @@ export default function Home() {
              <img src={p_middle_top} alt="p_middle_top" className="p_middle_top parallax-image" />
              <img src={p_middle_bottom} alt="p_middle_bottom" className="p_middle_bottom parallax-image" />
              <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" />
+             
              <h1 className="title">Get a tax valuation for wildlife management while helping to sustain the native Texas Horned Lizard.</h1>
            </header>
    }
