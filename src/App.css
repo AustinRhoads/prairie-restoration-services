@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 
 .app{
   font-family: 'Roboto Condensed', sans-serif;
@@ -6,7 +8,8 @@
 }
 
 :root{
-  --header-2-font-size: 18pt;
+  --header-2-font-size: 2rem;
+  --mission-font-size: 2.5rem;
 }
 
 #nav-bar{
@@ -17,8 +20,9 @@
 }
 
 #nav-bar a {
-  text-decoration: none;
   
+  text-decoration: none;
+  z-index: 3;
 }
 
 #all-nav-links{
@@ -37,20 +41,109 @@
   color: whitesmoke;
 }
 
+.parallax-wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 400px;
+}
+
+.parallax-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#parallax-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    scrollbar-width: none;
+}
+
+
+
+.way-background,
+.background,
+.foreground,
+.p_top,
+.p_middle_top,
+.p_middle_bottom,
+.p_bottom{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.way-background {
+  transform: translateZ(-400px)  scale(2);
+}
+.background{
+  transform: translateZ(-200px)  scale(1.5);
+}
+
+.foreground{
+  transform: translateZ(-40px)  scale(1.1);
+}
+
+.p_top{
+  transform: translateZ(-40px)  scale(1.1);
+}
+
+.p_middle_top{
+  transform: translateZ(-20px)  scale(1.05);
+}
+
+.p_middle_bottom{
+  transform: translateZ(40px)  scale(0.9);
+}
+
+.p_bottom{
+  transform: translateZ(80px)  scale(0.8);
+}
+
+
+.title{
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  /*transform: translateZ(40px)  scale(0.9);*/
+  transform: translateZ(80px)  scale(0.8);
+}
+
+#text-section{
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.parallax-image{
+  width: 100vw;
+
+}
+
+/* after parallax */
 
 #home-top-image-div{
-  position: relative;
-  max-width: 80vw;
+  /*position: relative;*/
+  /*max-width: 80vw;*/
+  height: 100vh;
   margin: auto;
 
 }
 
 
 #prarie-one-image{
- 
+  position: absolute;
+  top: 0;
   width: 100%;
   height: auto;
- 
+ z-index: -1;
   
 
 }
@@ -66,9 +159,9 @@
 
 
 #home-top-image-text{
- padding: 25% 0;
-  font-size: 22pt;
-  line-height: 30pt;
+
+  font-size: var( --mission-font-size);
+  line-height: 3rem;
   color: whitesmoke;
 }
 
@@ -89,8 +182,9 @@
 }
 
 #lizard-right{
+  position: absolute;
   width: 200px;
-  margin-left: auto;
+  top: 200px;
 }
 
 #yellow-grass-img{
