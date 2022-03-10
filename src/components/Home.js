@@ -22,6 +22,8 @@ import p_bottom from '../images/prairie_bottom.png'
 
 export default function Home() {
 
+  //const [allParallaxLoaded, setAllParallaxLoaded] = useState(false)
+
 
  // const render_stuff = () => {
  //   return <div>
@@ -51,37 +53,57 @@ export default function Home() {
  //         </header>
  // }
 
+ const loadedAll =() => {
+   
+  let parallax_header = document.querySelector("#parallax-header")
+    parallax_header.classList.remove("not-visible")
+    parallax_header.classList.add("visible")
+ }
+
   const render_parallax_two = () => {
-    return <header id="parallax-header">
+
+  
+            return <header id="parallax-header" className="not-visible">
+            
              <img src={prairie_sky} alt="sky" className="way-background parallax-image" />
              <img src={prairie_mountains} alt="mountains" className="background parallax-image" />
              <img src={p_top} alt="p_top" className="p_top parallax-image" />
              <img src={p_middle_top} alt="p_middle_top" className="p_middle_top parallax-image" />
              <img src={p_middle_bottom} alt="p_middle_bottom" className="p_middle_bottom parallax-image" />
              <img id="parallax-toad-right" className="toad-right parallax-toad" src={h_toad_r_shadow} alt="toady" />
-             <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" />
+             <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" onLoad={() => loadedAll()} />
              
              <h1 className="title">Get a wildlife management tax valuation for your land while helping to sustain the native Texas Horned Lizard!</h1>
              <div className="greeting-btns">
              <button className="btns">Get started</button> 
              <button className="btns-inverted">Learn More</button>
                </div>
+  
              
-           </header>
+            </header>
+            
+    
+      
    }
 
   return (
+ 
       <div id="home-page" className="parallax-wrapper">
+
+        
           
         {render_parallax_two()}
+
           <section id="text-section">
             <LoremIpsum p={10} />
           </section>
          
+      
           
         
           <footer></footer>
       </div>
+  
     
   )
 }

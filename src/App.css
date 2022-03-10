@@ -3,6 +3,14 @@ body{
   scroll-behavior: smooth;
 }
 
+.not-visible{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+}
+
 .app{
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'national-park';
@@ -103,6 +111,7 @@ body{
   overflow-x: hidden;
   perspective: 400px;
   scroll-behavior: smooth;
+ 
 }
 
 .title{
