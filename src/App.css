@@ -104,6 +104,7 @@ body{
 
 .parallax-wrapper{
   height: 100vh;
+  min-height: 390px;
  /* width: 80vw;
   float: right;
   */
@@ -370,6 +371,11 @@ body{
 
 @media only screen and (max-width: 960px){
 
+  .parallax-wrapper{
+    min-height: 360px;
+  }
+
+
   .nav-link{
     margin-left: 0.5rem;
     font-size: var(--header-2-mobile-size);
@@ -500,10 +506,15 @@ body{
 
 @media only screen and (max-width: 690px){
 
+
+  .parallax-wrapper{
+    min-height: 360px;
+  }
+
   .title{
     position: absolute;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 300;
     color: white;
     text-shadow: none;
@@ -587,3 +598,7 @@ body{
 
 
 }
+
+
+
+
