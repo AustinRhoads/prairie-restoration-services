@@ -120,7 +120,7 @@ body{
   /*transform: translateZ(40px)  scale(0.9);*/
       /* 1.618 version */
   opacity: 1;
-  animation: fadeInUp 2s ease-in;
+  animation: fadeInUp 2s;
 }
 
 @keyframes fadeInUp{
@@ -343,6 +343,20 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TABLET SETTINGS*/
 
 @media only screen and (max-width: 960px){
@@ -360,10 +374,114 @@ body{
     text-align: center;
   }
 
+  .title{
+    position: absolute;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: none;
+    text-align: center;
+    width: 63vw;
+    height: 33vh;
+  
+    left: 50vw;
+    top: 30vh;
+   
+    /*transform: translateZ(40px)  scale(0.9);*/
+        /* 1.618 version */
+  animation: tabletFadeInUp 1s ease-in;
+  
+  transform: translateY(-50%) translateX(-50%);
+  }
+
+  @keyframes tabletFadeInUp{
+    from {
+      opacity: 0;
+      transform: translateY(-100%) translateX(-50%);
+      
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50%) translateX(-50%);
+      
+    }
+  }
+
+
+
+  .greeting-btns{
+    position: absolute;
+    top: 55vh;
+    left: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 130px;
+    height: 100px;
+    transform: translateX(-50%) translateY(-80%);
+  
+  }
+
+  .btns{
+    border: solid var(--sage);
+    color: rgba(0, 0, 0);
+    width: 130px;
+    height: 42px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--sage);
+   
+  }
+  
+  .btns-inverted{
+    border: solid var(--sage);
+    color: var(--sage);
+    width: 130px;
+    height: 42px;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+   
+  }
+
+  .toad-right {
+    top: 63vh;
+    left: 50vw;
+    width: 33vw;
+    min-width: 250px;
+  
+    /* p_mid_bottom*/
+    transform: translateZ(-150px)  scale(1.375) scaleX(-1);
+  
+     /* p_bottom */
+     transform: translateZ(-100px) translateX(-50%)  scale(1.25);
+  
+  }
+
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
