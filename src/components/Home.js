@@ -58,7 +58,7 @@ export default function Home() {
              <img src={p_top} alt="p_top" className="p_top parallax-image" />
              <img src={p_middle_top} alt="p_middle_top" className="p_middle_top parallax-image" />
              <img src={p_middle_bottom} alt="p_middle_bottom" className="p_middle_bottom parallax-image" />
-             <img id="parallax-toad-right" className="toad-right parallax-toad" src={h_toad_r_shadow} />
+             <img id="parallax-toad-right" className="toad-right parallax-toad" src={h_toad_r_shadow} alt="toady" />
              <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" />
              
              <h1 className="title">Get a wildlife management tax valuation for your land while helping to sustain the native Texas Horned Lizard!</h1>
