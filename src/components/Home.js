@@ -11,14 +11,20 @@ import h_toad_r_shadow from '../images/horney_toad_1_shadow.png'
 //import yellow_grass from '../images/yellow_indian_grass_trans.png'
 import { LoremIpsum } from 'react-lorem-ipsum';
 //import prairie_fore from '../images/prairie_land_fore.png';
-import prairie_mountains from '../images/prairie_mountains_background.png'
-import prairie_sky from '../images/prairie_sky_background.png';
+//import prairie_mountains from '../images/prairie_mountains_background.png'
+import prairie_mountains from '../images/p_mountains_compressed.png'
+//import prairie_sky from '../images/prairie_sky_background.png';
+import prairie_sky from '../images/p_sky_compressed.png';
 
 
-import p_top from '../images/prairie_top.png'
-import p_middle_top from '../images/prairie_middle_top.png'
-import p_middle_bottom from '../images/prairie_middle_bottom.png'
-import p_bottom from '../images/prairie_bottom.png'
+//import p_top from '../images/prairie_top.png'
+import p_top from '../images/p_top_compressed.png'
+//import p_middle_top from '../images/prairie_middle_top.png'
+import p_middle_top from '../images/p_middle_top_compressed.png'
+//import p_middle_bottom from '../images/prairie_middle_bottom.png'
+import p_middle_bottom from '../images/p_middle_bottom_compressed.png'
+//import p_bottom from '../images/prairie_bottom.png'
+import p_bottom from '../images/p_bottom_compressed.png'
 
 export default function Home() {
 
