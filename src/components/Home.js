@@ -54,10 +54,15 @@ export default function Home() {
  // }
 
  const loadedAll =() => {
-   
-  let parallax_header = document.querySelector("#parallax-header")
+
+   let title = document.getElementById('title-text');
+   title.classList.add("animated");
+   title.classList.remove("not-visible");
+
+  let parallax_header = document.querySelector("#parallax-header");
     parallax_header.classList.remove("not-visible")
     parallax_header.classList.add("visible")
+
  }
 
   const render_parallax_two = () => {
@@ -73,7 +78,7 @@ export default function Home() {
              <img id="parallax-toad-right" className="toad-right parallax-toad" src={h_toad_r_shadow} alt="toady" />
              <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" onLoad={() => loadedAll()} />
              
-             <h1 className="title">Get a wildlife management tax valuation for your land while helping to sustain the native Texas Horned Lizard!</h1>
+             <h1 className="title not-visible" id="title-text">Get a wildlife management tax valuation for your land while helping to sustain the native Texas Horned Lizard!</h1>
              <div className="greeting-btns">
              <button className="btns">Get started</button> 
              <button className="btns-inverted">Learn More</button>

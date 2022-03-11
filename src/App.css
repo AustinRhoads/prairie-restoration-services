@@ -655,12 +655,19 @@ body{
    
     /*transform: translateZ(40px)  scale(0.9);*/
         /* 1.618 version */
-  animation: mobileFadeInUp 1s ease-in;
+ 
   
   transform: translateY(-50%) translateX(-50%);
   }
 
-  @keyframes mobileFadeInUp{
+  .animated{
+    opacity: 1;
+    animation: fadeInUp .8s ease-in;
+   
+    
+  }
+
+  @keyframes fadeInUp{
     from {
       opacity: 0;
       transform: translateY(-100%) translateX(-50%);
