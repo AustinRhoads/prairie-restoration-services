@@ -73,6 +73,27 @@ body{
   color: whitesmoke;
 }
 
+
+#home-banner{
+  position: absolute;
+
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+
+  color: white;
+
+  margin-top: 20px;
+  left: 50vw;
+  width: 100vw;
+  height: 60px;
+ 
+  z-index: 3;
+
+  transform: translateX(-50%);
+}
+
 .greeting-btns{
   position: absolute;
   top: 30vh;
@@ -131,8 +152,8 @@ body{
   height: 33vh;
   
 
-  left: 14vw;
-  top: calc(6vh);
+  left: 10vw;
+  top: calc(16vh);
  
   /*transform: translateZ(40px)  scale(0.9);*/
       /* 1.618 version */
@@ -142,7 +163,7 @@ body{
 
 .animated{
   opacity: 1;
-  animation: fadeInUp .8s ease-in;
+  animation: fadeInUp .8s ease-in-out;
  
   
 }
@@ -403,6 +424,12 @@ body{
     text-align: center;
   }
 
+  #home-banner{
+    
+  
+    font-size: 3rem;
+  }
+
   .title{
     position: absolute;
     font-size: 2.2rem;
@@ -518,6 +545,11 @@ body{
   .parallax-wrapper{
    
   }
+  #home-banner{
+    
+  
+    font-size: 6vw;
+  }
 
 
   .nav-link{
@@ -535,7 +567,7 @@ body{
 
   .title{
     position: absolute;
-    font-size: 4vw;
+    font-size: 3.3vw;
     line-height: 2rem;
     font-weight: 600;
     color: white;
@@ -545,7 +577,7 @@ body{
     height: 33vh;
   
     left: 35vw;
-    top: 20vh;
+    top: 33vh;
    
     /*transform: translateZ(40px)  scale(0.9);*/
         /* 1.618 version */
@@ -608,7 +640,7 @@ body{
 
   .toad-right {
     top: 50vh;
-    left: 45vw;
+    left: 35vw;
     width: 33vw;
     min-width: 250px;
   
@@ -652,10 +684,18 @@ body{
     min-height: 360px;
   }
 
+  #home-banner{
+    position: absolute;
+  
+    font-size: 6vh;
+    line-height: 2.4rem;
+  }
+
   .title{
     position: absolute;
-    font-size: 4.5vh;
-    line-height: 2rem;
+    font-size: 4vh;
+    /*line-height: 2rem;*/
+    line-height: 1.6rem;
     font-weight: 300;
     color: white;
     text-shadow: none;
@@ -664,7 +704,7 @@ body{
     height: 33vh;
   
     left: 50vw;
-    top: 20vh;
+    top: 36vh;
    
     /*transform: translateZ(40px)  scale(0.9);*/
         /* 1.618 version */
@@ -696,7 +736,7 @@ body{
 
   .greeting-btns{
     position: absolute;
-    top: 50vh;
+    top: 56vh;
     left: 50vw;
     display: flex;
     flex-direction: column;
@@ -732,7 +772,7 @@ body{
   }
 
   .toad-right {
-    top: 63vh;
+    top: 70vh;
     left: 50vw;
     width: 250px;
   

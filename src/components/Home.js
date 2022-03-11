@@ -11,53 +11,16 @@ import h_toad_r_shadow from '../images/horney_toad_1_shadow.png'
 //import yellow_grass from '../images/yellow_indian_grass_trans.png'
 import { LoremIpsum } from 'react-lorem-ipsum';
 //import prairie_fore from '../images/prairie_land_fore.png';
-//import prairie_mountains from '../images/prairie_mountains_background.png'
+
+
+
 import prairie_mountains from '../images/p_mountains_compressed.png'
-//import prairie_sky from '../images/prairie_sky_background.png';
 import prairie_sky from '../images/p_sky_compressed.png';
-
-
-//import p_top from '../images/prairie_top.png'
 import p_top from '../images/p_top_compressed.png'
-//import p_middle_top from '../images/prairie_middle_top.png'
 import p_middle_top from '../images/p_middle_top_compressed.png'
-//import p_middle_bottom from '../images/prairie_middle_bottom.png'
 import p_middle_bottom from '../images/p_middle_bottom_compressed.png'
-//import p_bottom from '../images/prairie_bottom.png'
 import p_bottom from '../images/p_bottom_compressed.png'
-
 export default function Home() {
-
-  //const [allParallaxLoaded, setAllParallaxLoaded] = useState(false)
-
-
- // const render_stuff = () => {
- //   return <div>
- //     <div id="home-top-image-div">
- //             <div id="home-top-image-text-div">
- //             <div id="home-top-image-text">Our misson is to empower everyday people with the tools, know-how, and ability to link, increase, improve, and create habitat to make a measurable difference to the prosperity and comeback of Texas Horned Lizards.</div>
- //             </div>
- //             <img src={prairie_sky} alt="sky" />
- //             <img src={prairie_mountains} alt="mountains" />
- //             <img src={prairie_fore} alt="land" />
- //           
- //           {/*<img id="prarie-one-image" alt="prarie-one" src={Prarie} />*/}
- //         </div>
- //         <GoalsPage />
- //         <img id="lizard-right" src={  h_toad_r_shadow} alt="lizard" />
- //         <img id="yellow-grass-img" src={yellow_grass} alt="yellow_grass" />
- //         <img id="lizard-left" src={h_toad_float} alt="above-footer" />
- //   </div>
- // }
-
- // const render_parallax_one = () => {
- //  return <header id="parallax-header">
- //           <img src={prairie_sky} alt="sky" className="way-background parallax-image" />
- //           <img src={prairie_mountains} alt="mountains" className="background parallax-image" />
- //           <img src={prairie_fore} alt="land" className="foreground parallax-image" />
- //           <h1 className="title">Welcome!</h1>
- //         </header>
- // }
 
  const loadedAll =() => {
 
@@ -101,7 +64,7 @@ export default function Home() {
  
       <div id="home-page" className="parallax-wrapper">
 
-        
+        <div id="home-banner">Prairie WildLife Management Services</div>
           
         {render_parallax_two()}
 
