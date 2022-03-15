@@ -1,4 +1,7 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+
+import Mission from './Mission';
 
 //import GoalsPage from './GoalsPage'
 
@@ -20,7 +23,14 @@ import p_top from '../images/p_top_compressed.png'
 import p_middle_top from '../images/p_middle_top_compressed.png'
 import p_middle_bottom from '../images/p_middle_bottom_compressed.png'
 import p_bottom from '../images/p_bottom_compressed.png'
+
+
+
+
+
 export default function Home() {
+
+  const navigate = useNavigate();
 
  const loadedAll =() => {
 
@@ -32,6 +42,10 @@ export default function Home() {
     parallax_header.classList.remove("not-visible")
     parallax_header.classList.add("visible")
 
+ }
+
+ const go_to_contact_page = () => {
+  navigate( "/contact", {replace: false})
  }
 
   const render_parallax_two = () => {
@@ -46,10 +60,31 @@ export default function Home() {
              <img src={p_middle_bottom} alt="p_middle_bottom" className="p_middle_bottom parallax-image" />
              <img id="parallax-toad-right" className="toad-right parallax-toad" src={h_toad_r_shadow} alt="toady" />
              <img src={p_bottom} alt="p_bottom" className="p_bottom parallax-image" onLoad={() => loadedAll()} />
-             
-             <h1 className="title not-visible" id="title-text">Get a wildlife management tax valuation for your land while helping to sustain the native Texas Horned Lizard!</h1>
+
+             <div id= "white-gradient-div"></div>
+             <div id= "gray-gradient-div"></div>
+
+             <div id="slanted-div"></div>
+
+             <div id="title-text" className="not-visible">
+               <div className="title-header title-1"> Bring back the <span className="horney-toad-name">horney toad</span>.</div>
+               <div className="title-header title-2"> and get a wildlife management tax valuation for your land.</div> 
+             </div>
+
+
+             <div id="home-mission">
+
+               <div id="green-bar"></div>
+
+                <div id="home-mission-text">
+                 Our mission is to empower everyday people with the tools, know-how, and ability to link, increase, improve, and create habitat to make a measurable difference to the prosperity and “comeback” of Texas Horned Lizards.
+                </div>  
+
+              </div>
+
+
              <div className="greeting-btns">
-             <button className="btns">Get started</button> 
+             <button className="btns" onClick={() => go_to_contact_page()}>Let's Talk!</button> 
              <button className="btns-inverted">Learn More</button>
                </div>
   
@@ -61,12 +96,20 @@ export default function Home() {
    }
 
   return (
- 
-      <div id="home-page" className="parallax-wrapper">
-
-        <div id="home-banner">Prairie WildLife Management Services</div>
+    <div id="home-page">
+      
+      <div  className="parallax-wrapper">
+        <section id="banner-section">
+        <div id="home-banner">TEXAS<span className="horney-toad-name">HORNS</span></div>
+        <div id="home-banner-underline">Prairie WildLife Management Services</div>
+        </section>
+       
           
         {render_parallax_two()}
+
+        <section>
+          <Mission />
+        </section>
 
           <section id="text-section">
             <LoremIpsum p={10} />
@@ -76,6 +119,8 @@ export default function Home() {
           
         
           <footer></footer>
+      </div>
+
       </div>
   
     
