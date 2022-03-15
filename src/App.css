@@ -1016,7 +1016,7 @@ button:hover{
 
   #title-text{
     top: 18vh;
-    top: 27vh;
+    top: 29.4vh;
     transform: translateZ(100px)  scale(.75);
   }
 
@@ -1031,7 +1031,7 @@ button:hover{
 
   .greeting-btns{
     position: absolute;
-    top: 58vh;
+    top: 63vh;
     left: 10vw;
     display: flex;
     flex-direction: column;
