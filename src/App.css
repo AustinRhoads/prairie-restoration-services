@@ -1002,7 +1002,8 @@ button:hover{
 
   #title-text{
     top: 18vh;
-    
+    top: 27vh;
+    transform: translateZ(100px)  scale(.75);
   }
 
   .title-1{
