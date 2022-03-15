@@ -1032,6 +1032,7 @@ button:hover{
   .greeting-btns{
     position: absolute;
     top: 63vh;
+    top: 63vh;
     left: 10vw;
     display: flex;
     flex-direction: column;
@@ -1053,9 +1054,9 @@ button:hover{
   }
 
   .toad-right {
-    top: 70vh;
-    left: 50vw;
-    width: 250px;
+    top: 63vh;
+    left: 78vw;
+    min-width: 200px;
   
     /* p_mid_bottom*/
     transform: translateZ(-150px)  scale(1.375) scaleX(-1);
@@ -1064,6 +1065,8 @@ button:hover{
      transform: translateZ(-100px) translateX(-50%)  scale(1.25);
   
   }
+
+ 
 
 
 }
