@@ -72,7 +72,7 @@ button:hover{
 
 #all-nav-links{
   position: absolute;
-  width: 100%;
+  width: 63vw;
   top: 50%;
   left: 63%;
   transform: translate(-50%, -50%);
