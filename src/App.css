@@ -773,6 +773,7 @@ button:hover{
     
     
     color: whitesmoke;
+    display: none;
   }
 
   #nav-bar{
@@ -906,8 +907,15 @@ button:hover{
 
 /* MOBILE SETTINGS*/
 
-@media only screen and (max-width: 690px){
+@media only screen and (max-width: 490px){
 
+  .nav-link{
+    display: none;
+  }
+
+  #home-link{
+    font-size: larger;
+  }
 
   .parallax-wrapper{
     min-height: 360px;
