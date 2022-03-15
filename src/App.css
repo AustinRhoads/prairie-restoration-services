@@ -947,7 +947,7 @@ button:hover{
 
   .animated{
     opacity: 1;
-    animation: fadeInUp .8s ease-in-out;
+    animation: parallaxfadeInUp .8s ease-in-out;
   
     
   }
@@ -963,6 +963,20 @@ button:hover{
       transform: translateY(0%) translateX(0%);
       
     }
+  }
+
+  @keyframes parallaxfadeInUp{
+    from {
+      opacity: 0;
+      transform: translateZ(100px) translateY(-100%) translateX(0%) scale(.75);
+      
+    }
+    to {
+      opacity: 1;
+      transform: translateZ(100px) translateY(0%) translateX(0%) scale(.75);
+      
+    }
+
   }
 
   #slanted-div{
