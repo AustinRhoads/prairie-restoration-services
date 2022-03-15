@@ -1055,8 +1055,8 @@ button:hover{
 
   .toad-right {
     top: 63vh;
-    left: 78vw;
-    min-width: 200px;
+    left: 70vw;
+    min-width: 230px;
   
     /* p_mid_bottom*/
     transform: translateZ(-150px)  scale(1.375) scaleX(-1);
