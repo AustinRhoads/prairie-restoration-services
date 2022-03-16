@@ -93,7 +93,7 @@ button:hover{
   font-size: 2vw;
   position: absolute;
   top: 50%;
-  left: 12vw;
+  left: 10vw;
   font-weight: 600;
   transform: translate(0%, -50%);
 
@@ -103,11 +103,11 @@ button:hover{
 #banner-section{
   position: absolute;
   top: 0px;
-  left: 50vw;
+  left: 10vw;
   display: flex;
   flex-direction: column;
   z-index: 3;
-  transform: translateX(-50%);
+  transform: translateX(0%);
 }
 
 
@@ -178,6 +178,8 @@ button:hover{
   
   overflow-y: auto;
   overflow-x: hidden;
+
+  /* the problem with mobile safari is overflow and preserve 3d*/
   perspective: 400px;
   scroll-behavior: smooth;
 
@@ -337,6 +339,7 @@ button:hover{
     align-items: center;
     height: 100vh;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     z-index: -1;
     scrollbar-width: none;
    
@@ -757,7 +760,7 @@ button:hover{
 
 /* ROTATED MOBILE ROTATED*/
 
-@media only screen and (max-width: 800px) and (max-height: 600px) {
+@media only screen and (max-width: 980px) and (max-height: 600px) {
 
   .parallax-wrapper{
    

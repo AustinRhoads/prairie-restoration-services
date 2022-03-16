@@ -67,8 +67,8 @@ export default function Home() {
              <div id="slanted-div"></div>
 
              <div id="title-text" className="not-visible">
-               <div className="title-header title-1"> Bring back the <span className="horney-toad-name">horney toad</span>.</div>
-               <div className="title-header title-2"> and get a wildlife management tax valuation for your land.</div> 
+               <div className="title-header title-1"> Bring back the <span className="horney-toad-name">horney toad</span></div>
+               <div className="title-header title-2"> and get a wildlife management tax valuation for your land</div> 
              </div>
 
 
