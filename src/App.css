@@ -44,7 +44,10 @@ body{
   --active-color: #8abc8a;
   --60-percent: #C9AE5D;
   --30-percent: #333;
-  --10-percent: #8abc8a;;
+  --10-percent: #8abc8a;
+  --background: #333;
+  --background-light: #454545;
+  --new-white: #e6e5e5;
 }
 
 button:hover{
@@ -84,13 +87,13 @@ button:hover{
 .nav-link{
   margin-left: 40px;
   font-weight: 200;
-  font-size: 1.7vw;
+  font-size: 0.9rem;
   color: whitesmoke;
 }
 
 #home-link{
   color:#e6e5e5;
-  font-size: 2vw;
+  font-size: 1.4rem;
   position: absolute;
   top: 50%;
   left: 10vw;
@@ -166,6 +169,13 @@ button:hover{
   font-weight: bold;
   background: transparent;
 
+}
+
+
+.sticky-button{
+  background-color: var(--sage-shadow);
+  width: 50px;
+  border-radius: 50%;
 }
 
 .parallax-wrapper{
@@ -278,6 +288,8 @@ button:hover{
   padding-left: 8px;
  
 }
+
+
 
 #green-bar{
   position: absolute;
@@ -463,12 +475,8 @@ button:hover{
    transform: translateZ(-100px)  scale(1.25);
 }
 
-#mission-div{
-  font-size: 2rem;
-  padding: 2rem;
-  background-color: #333;
-  color: white;
- margin-top: -2px;
+#mobile-mission-div{
+
  display: none;
   
 }
@@ -1013,9 +1021,96 @@ button:hover{
     display: none;
   }
 
-  #mission-div{
-    display: block;
+  #mobile-mission-div{
+    position: relative;
+    width: 100vw;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: var(--background);
+    color: white;
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
   }
+
+  #mission-img-div{
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+  }
+
+  #q-toad{
+    /*object-fit: none;
+    object-position: 30% 50%;*/
+
+    width: 80vw;
+   transform: translateX(10%) translateY(-27%) scale(1.5);
+    
+  }
+
+  #mobile-mission-banner{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 14vw;
+    position: absolute;
+    top: 60vw;
+    left: 12vw;
+    z-index: 3;
+  }
+
+  #mobile-mission-text-div{
+    width: 80vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--background-light);
+    background: linear-gradient(  var(--background-light), var(--background) 100%);
+  }
+
+
+
+  #mobile-mission-text{
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    z-index: 3;
+  }
+
+  #mission-green-bar{
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: -6vw;
+    background-color: var(--sage-shadow);
+  }
+
+  #shade-div{
+    position: absolute;
+    background: linear-gradient(to top, #333, rgba(51, 51, 51, 0) 33%);
+   
+    width: 80vw;
+    height: 80vw;
+    z-index: 1;
+  }
+
+
+
+  #shade-div-2{
+    position: absolute;
+    /*background: linear-gradient(to top, #333, rgba(51, 51, 51, 0) 100%);*/
+   bottom: 0;
+    height: 50vh;
+    width: 100%;
+    z-index: 1;
+  }
+
 
   #title-text{
     top: 18vh;

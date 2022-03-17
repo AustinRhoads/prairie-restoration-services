@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import Mission from './Mission';
@@ -84,7 +84,7 @@ export default function Home() {
 
 
              <div className="greeting-btns">
-             <button className="btns" onClick={() => go_to_contact_page()}>Let's Talk!</button> 
+             <button id= "cta-btn" className="btns" onClick={() => go_to_contact_page()}>Let's Talk!</button> 
              <button className="btns-inverted">Learn More</button>
                </div>
   
@@ -94,6 +94,19 @@ export default function Home() {
     
       
    }
+
+
+   useEffect(() => {
+
+  // let home = document.getElementById('home-page');
+
+     window.addEventListener("scroll", () => {
+
+      const cta = document.getElementById('cta-btn')
+      console.log(cta.getBoundingClientRect())
+     })
+
+   })
 
   return (
     <div id="home-page">
