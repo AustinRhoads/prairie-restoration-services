@@ -1033,13 +1033,15 @@ button:hover{
     flex-direction: column;
   }
 
+
+
   #mission-img-div{
     position: relative;
     width: 80vw;
     height: 80vw;
     overflow: hidden;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     
   }
 
@@ -1064,8 +1066,7 @@ button:hover{
 
   #mobile-mission-text-div{
     width: 80vw;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
     background-color: var(--background-light);
     background: linear-gradient(  var(--background-light), var(--background) 100%);
   }
