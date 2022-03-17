@@ -1050,7 +1050,7 @@ button:hover{
     object-position: 30% 50%;*/
 
     width: 80vw;
-   transform: translateX(10%) translateY(-27%) scale(1.5);
+   transform: translateX(14%) translateY(-38%) scale(1.5);
     
   }
 
@@ -1059,7 +1059,7 @@ button:hover{
     font-size: 60px;
     line-height: 14vw;
     position: absolute;
-    top: 60vw;
+    top: 55vw;
     left: 12vw;
     z-index: 3;
   }
