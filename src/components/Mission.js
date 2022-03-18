@@ -16,7 +16,7 @@ export default function Mission() {
             <div id="shade-div"></div>
 
             <div id="mobile-mission-banner">
-                <div className="mission-banner-text-top">Our</div>
+                <div className="mission-banner-text-top make-it-green">Our</div>
                 <div className="mission-banner-text-bottom">Mission</div>
             </div>
 
@@ -27,7 +27,7 @@ export default function Mission() {
 
                 <div id="mobile-mission-text">
                 <div id="mission-green-bar" ></div>
-                    is to empower everyday people with the tools, know-how, and ability to link, increase, improve, and create habitat to make a measurable difference to the prosperity and “comeback” of Texas Horned Lizards.    
+                    is to empower everyday people with the tools and know-how to increase and improve habitat to make a measurable difference to the prosperity and “comeback” of Texas Horned Lizards.    
                 </div>
 
             </div>

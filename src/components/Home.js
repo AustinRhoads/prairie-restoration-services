@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import Mission from './Mission';
+import Who from './Who';
+import What from './What';
 
 //import GoalsPage from './GoalsPage'
 
@@ -12,7 +14,7 @@ import Mission from './Mission';
 //import h_toad_float from '../images/horney_toad_float.png'
 import h_toad_r_shadow from '../images/horney_toad_1_shadow.png'
 //import yellow_grass from '../images/yellow_indian_grass_trans.png'
-import { LoremIpsum } from 'react-lorem-ipsum';
+//import { LoremIpsum } from 'react-lorem-ipsum';
 //import prairie_fore from '../images/prairie_land_fore.png';
 
 
@@ -120,13 +122,15 @@ export default function Home() {
           
         {render_parallax_two()}
 
-        <section>
-          <Mission />
-        </section>
+        <div id="home-section-wrapper">
+          <Mission className="home-section"  />
+          <What  className="home-section" />      
+          <Who  className="home-section" />
+        </div>
 
-          <section id="text-section">
-            <LoremIpsum p={10} />
-          </section>
+        
+
+          
          
       
           
