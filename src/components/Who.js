@@ -32,7 +32,7 @@ export default function Who() {
                 <GiFarmer className="who-icon" />
                     <div className="who-text">Land Owners</div> 
                 </div>
-                <div className="who-item make-it-white"> 
+                <div id="who-park" className="who-item make-it-white"> 
                 <MdPark className="who-icon" />
                     <div className="who-text">Park Managers</div> 
                 </div>
@@ -41,7 +41,7 @@ export default function Who() {
 
             <div className="who-items-row">
             <div className="who-item"> 
-            <MdLandscape className='who-icon' />
+                <MdLandscape className='who-icon make-it-green' />
                     <div className="who-text">Land Managers</div> 
                 </div>
                 <div className="who-item"> 
