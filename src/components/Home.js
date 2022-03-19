@@ -101,11 +101,11 @@ export default function Home() {
    useEffect(() => {
 
   // let home = document.getElementById('home-page');
-
+    console.log(process.env.REACT_APP_TEST_EMAIL_TEMPLATE_ID)
      window.addEventListener("scroll", () => {
 
-      const cta = document.getElementById('cta-btn')
-      console.log(cta.getBoundingClientRect())
+     // const cta = document.getElementById('cta-btn')
+    //  console.log(cta.getBoundingClientRect())
      })
 
    })

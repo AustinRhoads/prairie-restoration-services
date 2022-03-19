@@ -731,7 +731,18 @@ button:hover{
 }
 
 
+#message-email{
 
+}
+
+#message-title{
+
+}
+
+#message-input{
+width: 200px;
+height: 200px;
+}
 
 
 
@@ -1343,7 +1354,8 @@ button:hover{
     line-height: 10px;
   }
 
- 
+
+
 
 
 }
