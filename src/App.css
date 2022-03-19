@@ -714,6 +714,7 @@ button:hover{
 .who-text{
   text-align: center;
   position: absolute;
+  font-family: 'national-park';
   left: 50%;
   top: 80%;
   transform: translateX(-50%) translateY(-50%);
