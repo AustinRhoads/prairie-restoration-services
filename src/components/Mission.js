@@ -27,7 +27,7 @@ export default function Mission() {
 
                 <div id="mobile-mission-text">
                 <div id="mission-green-bar" ></div>
-                    is to empower everyday people with the tools and know-how to increase and improve habitat to make a measurable difference to the prosperity and “comeback” of Texas Horned Lizards.    
+                    is to empower everyday people with the tools and know-how to increase and improve habitat for the prosperity and “comeback” of the Texas Horned Lizard.    
                 </div>
 
             </div>
