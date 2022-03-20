@@ -133,6 +133,15 @@ button:hover{
   display: none;
 }
 
+.hidden-menu{
+   
+  top: -200vh;
+   
+  opacity: 0;
+  height: 100vh; 
+  animation: none;
+}
+
 #home-page footer{
   height: 45px;
   background-color: var(--background);
@@ -922,6 +931,19 @@ height: 200px;
 
   }
 
+  #main-drop-down{
+    display: none;
+  }
+  
+  .hidden-menu{
+     
+    top: -200vh;
+     
+    opacity: 0;
+    height: 100vh; 
+    animation: none;
+  }
+
   #nav-bar{
     position: relative;
     height: 60px;
@@ -1380,6 +1402,7 @@ height: 200px;
 
   #main-drop-down{
     position: absolute;
+    
 
     display: flex;
     flex-direction: column;
@@ -1405,21 +1428,32 @@ height: 200px;
 
   }
 
+  .preloaded{
+    top: -200vh;
+    animation: none;
+  }
+
   .hidden-menu{
-   
+   display: none;
     top: -200vh;
      
     opacity: 0;
     height: 100vh; 
+    
     animation: hideMenu 1s ease-in-out;
   }
 
+
+
   .visible-menu{
+    margin-top: 0px;
     top: 0;
     opacity: 1;
     height: 100vh;
     animation: showMenu 1s ease-in-out;
   }
+
+
 
   @keyframes showMenu{
     0% {

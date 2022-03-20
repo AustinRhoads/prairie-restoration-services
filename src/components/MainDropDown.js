@@ -5,7 +5,7 @@ export default function MainDropDown(props) {
 
 
   return (
-    <div id="main-drop-down" className='hidden-menu' >
+    <div id="main-drop-down" className='preloaded'>
             <Link id="menu-home-link" onClick={() => props.select_i_ching()} className="menu-link" to="/" >Home</Link>
             <Link onClick={() => props.select_i_ching()} className="menu-link" to="/services">Services</Link>
             <Link onClick={() => props.select_i_ching()} className="menu-link" to="/research">Research</Link>

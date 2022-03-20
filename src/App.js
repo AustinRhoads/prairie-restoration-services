@@ -19,11 +19,20 @@ function App() {
 
     const i_ching = document.getElementById("i-ching");
     const menu = document.getElementById('main-drop-down')
+
     console.log(i_ching)
+
     i_ching.classList.toggle("i-ching-selected");
     i_ching.classList.toggle("i-ching-unselected");
-    menu.classList.toggle("hidden-menu");
-    menu.classList.toggle("visible-menu");
+
+    if (menu.classList.contains("preloaded"))  {
+      menu.classList.remove("preloaded")
+      menu.classList.add("visible-menu");
+    } else {
+      menu.classList.toggle("hidden-menu");
+      menu.classList.toggle("visible-menu");
+    }
+
   
     
   }
@@ -44,7 +53,7 @@ function App() {
             
       </div>
 
-      <MainDropDown  select_i_ching={select_i_ching} />
+      <MainDropDown  select_i_ching={select_i_ching}  />
       <Routes>
         <Route path="/" element={ <Home /> }/>
         <Route path="/services" element={ <ServicesPage /> } />
