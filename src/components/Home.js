@@ -126,6 +126,10 @@ export default function Home() {
           <Mission className="home-section"  />
           <What  className="home-section" />      
           <Who  className="home-section" />
+
+          <div id="my-spacer" >
+          <div className="my-space">bottom </div>  
+          </div>
         </div>
 
         
@@ -135,7 +139,7 @@ export default function Home() {
       
           
         
-          <footer></footer>
+        
       </div>
 
       </div>

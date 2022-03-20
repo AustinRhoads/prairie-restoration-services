@@ -4,7 +4,7 @@ import MessageForm from './MessageForm'
 export default function Contact() {
   return (
     <div id="contact-div">
-        <h1>Contact Me</h1>
+        <h1 id="contact-banner">Contact Us</h1>
         <br />
 
         <div id="contact-items-wrapper">

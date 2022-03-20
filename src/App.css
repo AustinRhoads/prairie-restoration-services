@@ -19,6 +19,8 @@ body{
 
 }
 
+
+
 @font-face {
   font-family: 'national-park';
   src: url('./typefaces/nationalPark/NationalPark-Regular.otf') format("opentype");
@@ -48,6 +50,7 @@ body{
 
   --background: #333;
   --background-light: #454545;
+  --background-dark: rgb(36, 36, 36);
   --transparent-background: #e6e5e500;
   --new-white: #e6e5e5;
   --logo-white: white;
@@ -90,7 +93,7 @@ button:hover{
   position: relative;
   
   height: 60px;
-  background-color: var(--30-percent);
+  background-color: var(--background-dark);
   text-align: center;
   
 }
@@ -118,6 +121,11 @@ button:hover{
   font-size: 0.9rem;
   color: whitesmoke;
   color: var(--new-white);
+}
+
+#home-page footer{
+  height: 45px;
+  background-color: var(--background);
 }
 
 #home-link{
@@ -609,14 +617,37 @@ button:hover{
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 200vh;
 }
+
+
+
+
+
+
+
 
 #what-banner-section{
   position: relative;
   width: 100vw;
   background-color: var(--background);
   z-index: 66;
+}
+
+#my-spacer{
+  position: relative;
+  width: 100vw;
+  background-color: var(--background);
+  z-index: 66;
+  display:block;
+  height: 100px;
+}
+
+.my-space{
+  position: absolute;
+  height: 133px;
+  top: 1080px;
+  color: var(--background);
 }
 
 #what-div{ 
@@ -629,6 +660,7 @@ button:hover{
   */
   position: relative;
   color: var(--new-white);
+  height: 100vh;
  
   
  
@@ -692,6 +724,11 @@ button:hover{
   
 }
 
+#who-items-container div.spacer-1{
+  position:relative;
+  height: 90px;
+}
+
 .who-items-row{
   display: flex;
   flex-direction: row;
@@ -730,7 +767,28 @@ button:hover{
   color: var(--background);
 }
 
+#contact-div{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--new-white);
+  display: inline-block;
+ 
+}
+
+#contact-div footer{
+  background-color: var(--new-white);
+}
+
+#contact-banner{
+padding-left: 10vw;
+}
+
+
+
 #contact-items-wrapper{
+  
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -739,6 +797,9 @@ button:hover{
 .contact-item{
   position: relative;
   width: 400px;
+  padding-left: 10vw;
+  margin-bottom: 90px;
+  
 }
 
 #contact-item-two{
@@ -746,10 +807,7 @@ button:hover{
   margin-left: 30px;
 }
 
-#contact-div{
-  position: absolute;
-  left: 10vw;
-}
+
 
 #message-form{
   width: 100%;
@@ -800,6 +858,23 @@ height: 200px;
 #contact-text{
   margin-left: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
