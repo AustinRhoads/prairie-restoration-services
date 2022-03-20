@@ -98,6 +98,10 @@ button:hover{
   
 }
 
+#i-ching{
+  display: none;
+}
+
 #nav-bar a {
   
   text-decoration: none;
@@ -1095,6 +1099,127 @@ height: 200px;
     display: none;
   }
 
+  #main-drop-down{
+    position: absolute;
+    background-color: #8abc8a;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    z-index: 110;
+    transition: 1s ease-in-out;
+
+  }
+
+  .hidden-menu{
+    opacity: 0;
+    display: none;
+  }
+
+  .visible-menu{
+    opacity: 1;
+    display: block;
+  }
+
+  #i-ching{
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    display: block;
+    z-index: 111;
+  }
+
+  #i-ching:hover{
+    cursor: pointer;
+  }
+
+  .i-ching-selected{
+
+    display: block;
+    
+    height: 60px;
+    width: 60px;
+    
+    transform: rotate(90deg);
+    transition: 1s ease-in-out;
+    z-index: 111;
+    
+    
+  }
+
+  .i-ching-unselected{
+
+    display: block;
+    
+    height: 60px;
+    width: 60px;
+    transition: 1s ease-in-out;
+    
+  }
+
+  .i-ching-bar{
+
+  }
+
+  .i-ching-bar-1,
+  .i-ching-bar-2,
+  .i-ching-bar-3{
+    height: 12px;
+    background-color: var(--new-white);
+    transition: 1s ease-in-out;
+  }
+
+
+  .i-ching-selected .i-ching-bar-1{
+    border: 1px solid var(--sage-shadow);
+    height: 10px;
+   transform: translateY(200%) rotate(-45deg);
+
+  }
+
+  .i-ching-selected .i-ching-bar-2{
+   
+    opacity: 0;
+   
+  }
+
+  .i-ching-selected .i-ching-bar-3{
+    border: 1px solid var(--sage-shadow);
+    height: 10px;
+    transform: translateY(-200%) rotate(45deg);
+  }
+
+  .i-ching-box{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: var(--sage-shadow);
+    transition: 1s ease-in-out;
+    transform: translateX(-50%) translateY(-47%);
+  }
+
+  .i-ching-selected .i-ching-box{
+    height: 16px;
+    width: 16px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+
+
+  #i-ching-bars-container{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+
+
+
   #nav-bar{
     position: relative;
     height: 60px;
@@ -1237,6 +1362,8 @@ height: 200px;
     display: none;
   }
 
+
+
   #home-link{
     font-size: larger;
   }
@@ -1244,6 +1371,167 @@ height: 200px;
   .parallax-wrapper{
     min-height: 360px;
   }
+
+  #main-drop-down{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8abc8a;
+    width: 100vw;
+    
+    
+    z-index: 110;
+    transition: 1s ease-in-out;
+
+  }
+
+  .menu-link{
+
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 5vw;
+    color: var(--new-white);
+    
+
+  }
+
+  .hidden-menu{
+   
+    top: -200vh;
+     
+    opacity: 0;
+    height: 100vh; 
+    animation: hideMenu 1s ease-in-out;
+  }
+
+  .visible-menu{
+    top: 0;
+    opacity: 1;
+    height: 100vh;
+    animation: showMenu 1s ease-in-out;
+  }
+
+  @keyframes showMenu{
+    0% {
+      opacity: 0;  
+      
+    }
+    1%{
+      top: 0;
+    
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  @keyframes hideMenu{
+    0% {
+      opacity: 1;
+      top: 0;
+    }
+    99% {
+      opacity: 0;
+    
+      top: 0;
+      
+    }
+    100% {
+      top: -200vh;
+      
+      opacity: 0;
+     
+    }
+  }
+
+
+
+  #i-ching{
+    position: absolute;
+    top: 0;
+    right: 10vw;
+    display: block;
+    height: 60px;
+    width: 60px;
+    z-index: 111;
+
+  }
+
+  #i-ching:hover{
+    cursor: pointer;
+  }
+
+  .i-ching-selected{  
+    transform: rotate(90deg);
+    transition: 1s ease-in-out; 
+  }
+
+  .i-ching-unselected{   
+    transition: 1s ease-in-out;  
+  }
+
+  .i-ching-bar{
+
+  }
+
+  .i-ching-bar-1,
+  .i-ching-bar-2,
+  .i-ching-bar-3{
+    height: 12px;
+    background-color: var(--new-white);
+    transition: 1s ease-in-out;
+  }
+
+
+  .i-ching-selected .i-ching-bar-1{
+    border: 1px solid var(--sage-shadow);
+    height: 10px;
+   transform: translateY(200%) rotate(-45deg);
+
+  }
+
+  .i-ching-selected .i-ching-bar-2{ 
+    opacity: 0;  
+  }
+
+  .i-ching-selected .i-ching-bar-3{
+    border: 1px solid var(--sage-shadow);
+    height: 10px;
+    transform: translateY(-200%) rotate(45deg);
+  }
+
+  .i-ching-box{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: var(--sage-shadow);
+    transition: 1s ease-in-out;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .i-ching-selected .i-ching-box{
+    height: 16px;
+    width: 16px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+
+
+  #i-ching-bars-container{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 
 
 
