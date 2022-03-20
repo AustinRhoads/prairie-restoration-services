@@ -21,7 +21,7 @@ export default function Contact() {
             
             
             <div id="contact-text">
-              <h3>Or contact me directly at</h3>
+              <h3>Or contact us directly at</h3>
               <h3>dusty@rehorningtexas.com</h3>
               <h3> or </h3>
               <h3>(832) 287-9207</h3>
