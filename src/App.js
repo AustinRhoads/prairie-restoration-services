@@ -49,7 +49,7 @@ function App() {
                 <div className="i-ching-bar-3"></div>   
               </div>
  
-            <div className="i-ching-box"></div>
+           {/*  <div className="i-ching-box"></div> */}
             
       </div>
 
