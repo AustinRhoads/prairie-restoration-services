@@ -108,6 +108,8 @@ button:hover{
   z-index: 3;
 }
 
+
+
 #all-nav-links{
   position: absolute;
   width: 63vw;
@@ -125,6 +127,10 @@ button:hover{
   font-size: 0.9rem;
   color: whitesmoke;
   color: var(--new-white);
+}
+
+#main-drop-down{
+  display: none;
 }
 
 #home-page footer{
