@@ -1409,7 +1409,7 @@ height: 200px;
     align-items: center;
     justify-content: center;
 
-    background-color: #8abc8a;
+    background-color: var(--new-white);
     width: 100vw;
     
     
@@ -1424,6 +1424,7 @@ height: 200px;
     font-size: 30px;
     margin-top: 5vw;
     color: var(--new-white);
+    color: #abbdab;
     
 
   }
@@ -1515,14 +1516,13 @@ height: 200px;
     transition: 1s ease-in-out;  
   }
 
-  .i-ching-bar{
 
-  }
 
   .i-ching-bar-1,
   .i-ching-bar-2,
   .i-ching-bar-3{
-    height: 12px;
+    height: 8px;
+    border-radius: 4px;
     background-color: var(--new-white);
     transition: 1s ease-in-out;
   }
@@ -1530,6 +1530,7 @@ height: 200px;
 
   .i-ching-selected .i-ching-bar-1{
     border: 1px solid var(--sage-shadow);
+    background-color: var(--background);
     height: 10px;
    transform: translateY(200%) rotate(-45deg);
 
@@ -1537,10 +1538,12 @@ height: 200px;
 
   .i-ching-selected .i-ching-bar-2{ 
     opacity: 0;  
+    transition: 0.5s ease-in-out;
   }
 
   .i-ching-selected .i-ching-bar-3{
     border: 1px solid var(--sage-shadow);
+    background-color: var(--background);
     height: 10px;
     transform: translateY(-200%) rotate(45deg);
   }
