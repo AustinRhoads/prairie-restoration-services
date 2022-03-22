@@ -1,34 +1,40 @@
 import React, {useRef} from 'react'
-import emailjs from '@emailjs/browser';
+//import { useNavigate } from 'react-router-dom';
+
+//import emailjs from '@emailjs/browser';
 import {BiSend} from 'react-icons/bi'
 
 export default function MessageForm() {
 
+   // const navigate = useNavigate();
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEST_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+       // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEST_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
+       //   .then((result) => {
+       //       console.log(result.text);
+       //   }, (error) => {
+       //       console.log(error.text);
+       //   });
+
+          
+
       };
 
 
 
 
   return (
-    <div id="message-form-div">
+    <div className="message-form-div">
         
  
-        <form id="message-form" ref={form} onSubmit={(e) => sendEmail(e)}>
+        <form className="message-form" ref={form} onSubmit={(e) => sendEmail(e)}>
 
             <label>Name</label>
             <br />
-            <input type="text" name="user_name" />
+            <input id="message-user-name" type="text" name="user_name" />
             <br/>
 
             <label>Email</label>

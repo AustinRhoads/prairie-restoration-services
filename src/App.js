@@ -10,7 +10,7 @@ import Publications from './components/Publications';
 import Contact from './components/Contact';
 import News from './components/News';
 import MainDropDown from './components/MainDropDown';
-
+import MessagePopUp from './components/MessagePopUp';
 
 function App() {
 
@@ -40,6 +40,8 @@ function App() {
   return (
     <div className="app">
       <NavBar />
+
+      <MessagePopUp />
 
 
       <div id="i-ching" className="i-ching-unselected" onClick={(e) => select_i_ching(e)}>

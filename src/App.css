@@ -398,6 +398,25 @@ button:hover{
 
 }
 
+#popup-message-form-div{
+  position: absolute;
+  display: none;
+  width: 80vw;
+  max-width: 500px;
+  max-height: 500px;
+  z-index: 9999;
+  background-color: var(--sage);
+}
+
+.message-form-div{
+ position: relative;
+width: 90%;
+margin-left: 5%;
+  
+}
+
+
+
 .parallax-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -828,7 +847,7 @@ padding-left: 10vw;
 
 
 
-#message-form{
+.message-form{
   width: 100%;
   
 }
@@ -876,6 +895,11 @@ height: 200px;
 
 #contact-text{
   margin-left: 20px;
+}
+
+
+#message-user-name{
+  
 }
 
 
@@ -1422,6 +1446,7 @@ height: 200px;
 
 
 
+
 }
 
 
@@ -1600,7 +1625,8 @@ height: 200px;
   }
 
   .i-ching-selected .i-ching-bar-2{ 
-    opacity: 0;  
+    opacity: 0;
+    
     transition: 0.5s ease-in-out;
   }
 
